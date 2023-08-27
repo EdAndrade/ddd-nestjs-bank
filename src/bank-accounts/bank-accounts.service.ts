@@ -1,7 +1,7 @@
 import { Inject, Injectable, Scope } from '@nestjs/common';
 import { CreateBankAccountDto } from './dto/create-bank-account.dto';
 import { Repository, DataSource } from 'typeorm';
-import { BankAccount } from './entities/bank-account.entity';
+import { BankAccount } from '../@core/infra/db/bank-account.schema';
 import { InjectRepository, getDataSourceToken } from '@nestjs/typeorm';
 // Real Eval Print Loop
 @Injectable({
@@ -66,4 +66,4 @@ export class BankAccountsService {
 
 // conta azul - tenant - empresa
 
-//SaaS 
+//SaaS
